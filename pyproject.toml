@@ -12,6 +12,7 @@ uvicorn = "^0.29.0"
 pandas = "^2.2.2"
 sqlmodel = "^0.0.16"
 psycopg2 = "^2.9.9"
+pydantic-settings = "^2.2.1"
 
 
 [build-system]
