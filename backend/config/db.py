@@ -3,10 +3,10 @@ import logging
 from sqlmodel import SQLModel, create_engine
 
 from config import settings
-import backend.models as models
+from backend.schemas.entities import *
 
 connect_args = {"check_same_thread": False}
-engine = create_engine(str(settings.database_uri), echo=True, connect_args=connect_args)
+engine = create_engine(str(settings.database_uri), echo=True)
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
