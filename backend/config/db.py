@@ -2,7 +2,7 @@ import logging
 
 from sqlmodel import SQLModel, create_engine
 
-from config import settings
+from backend.config import settings
 from backend.schemas.entities import *
 
 connect_args = {"check_same_thread": False}
