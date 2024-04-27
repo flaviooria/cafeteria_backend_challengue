@@ -1,7 +1,7 @@
-from enum import Enum
+import enum
 
 
-class Status(str, Enum):
+class Status(str, enum.Enum):
     active = "active"
     deleted = "deleted"
     banned = "banned"
