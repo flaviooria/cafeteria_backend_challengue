@@ -1,9 +1,10 @@
 from datetime import datetime
 from uuid import uuid4
 
-from models.users import Users
 from pydantic import UUID4
 from sqlmodel import Field, Relationship, SQLModel
+
+from .users import Users
 
 
 class MemberBase(SQLModel):

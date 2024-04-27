@@ -5,7 +5,7 @@ from pydantic import UUID4, EmailStr
 from sqlmodel import Field, Relationship, SQLModel
 
 from backend.enums.user_enum import Status
-from backend.models.members import Members
+from .members import Members
 
 
 class UserBase(SQLModel):
