@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:12
+    container_name: cafeteria_db_pg
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=cafeteria
+      - POSTGRES_PASSWORD=cafeteria_admin
+      - POSTGRES_DB=cafeteria_db
